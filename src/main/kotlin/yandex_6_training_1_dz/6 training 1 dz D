@@ -1,0 +1,9 @@
+8
+-1 1 freeze
+1 -1 freeze
+-1 1 auto
+1 -1 auto
+-1 1 heat
+1 -1 heat
+-1 1 fan
+1 -1 fan
