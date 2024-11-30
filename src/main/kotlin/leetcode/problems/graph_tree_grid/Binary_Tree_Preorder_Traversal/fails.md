@@ -22,3 +22,11 @@ answer.add(node)
 
 Line 13: Exception in thread "main" java.util.NoSuchElementException: List is empty.
 - надо обработать случай, когда root == null
+
+#### 30/11/2024
+Line 28: Char 33: error: unresolved reference: left
+stack.add(stack.left)  
+- в упор не увидел typo, хотя проверял перед отправкой
+
+WA 35/71 
+- в стек сначала надо добавлять правую и затем левую
