@@ -8,6 +8,9 @@
 3. Minimum Time to Visit a Cell In a Grid (30/11/2024)
     1. 01/12/2024 повторил +++ 
 4. Binary Tree Postorder Traversal - iterative 
+   1. 01/12/2024 повторил +++
+5. Binary Tree Inorder Traversal - iterative
+   1. 01/12/2024 повторил +++
 
 
     
