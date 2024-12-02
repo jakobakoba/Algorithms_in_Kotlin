@@ -22,3 +22,9 @@ WA 38/972
 
 WA 416/972
 - изменил на queue c pq и заработало
+
+### 02/12/2024
+- return тип неправильный
+
+Line 32: Exception in thread "main" java.lang.IllegalStateException:
+- инициализировал visited за пределами функции

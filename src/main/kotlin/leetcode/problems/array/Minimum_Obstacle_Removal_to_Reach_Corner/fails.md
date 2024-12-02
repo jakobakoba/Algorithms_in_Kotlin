@@ -14,3 +14,12 @@ kotlin.Triple cannot be cast to java.lang.Comparable
 - проверил, но все равно не заметил синтаксическую ошибку: два раза в одну линию инициализировал
  Deque
 - неправильно назвал имя главной функции
+
+### 02/12/2024
+не проверил перед отправкой, поленился. Line 21: Char 21: error: unresolved reference: neighbor
+if (neighbor in visited || nr < 0 || nc < 0 || nr >= rows || nc >= cols ){
+- Pair(nr,nc) in visited
+
+проверил, но все равно не нашел эту ошибку перед отправкой. Line 26: Char 36: error: type 
+mismatch: inferred type is Int but Triple<Int, Int, Int>! was expected deque.addFirst(obstacles, nr, nc)
+- Triple() 

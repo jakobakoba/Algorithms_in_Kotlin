@@ -1,9 +1,12 @@
-##### Recursive
+# Recursive
 Line 5: Char 22: error: unresolved reference: `val`
 ans.add(node.`val`) в traverse в параметры записал Int, а не TreeNode
 - node: TreeNode?
+### 02/12/2024
+проверил до отправки и не заметил: Line 2: Char 40: error: unresolved reference: MutableListOf
+- неправильно написал тип к аргументу
 
-##### Iterative
+# Iterative
 Line 6: Char 19: error: type mismatch: inferred type is TreeNode? but TreeNode was expected
 stack.add(root) stack был TreeNode, а root был TreeNode?
 - сделал stack TreeNode?
@@ -29,4 +32,8 @@ stack.add(stack.left)
 - в упор не увидел typo, хотя проверял перед отправкой
 
 WA 35/71 
+- в стек сначала надо добавлять правую и затем левую
+
+### 02/12/2024
+WA 35/71 урок не был усвоен, я повторил ошибку
 - в стек сначала надо добавлять правую и затем левую
