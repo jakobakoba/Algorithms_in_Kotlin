@@ -28,3 +28,12 @@ WA 416/972
 
 Line 32: Exception in thread "main" java.lang.IllegalStateException:
 - инициализировал visited за пределами функции
+
+### 03/12/2024
+Line 10: Char 30: error: one type argument expected for interface Queue<E : Any!>
+val queue : Queue<Int, Int> = LinkedList()
+- неправильно инициализировал Queue
+
+Line 21: Char 38: error: function invocation 'step(...)' expected
+for (neighbor in adj[step]){
+- удалил переменную и потом ссылался на нее несуществующую
