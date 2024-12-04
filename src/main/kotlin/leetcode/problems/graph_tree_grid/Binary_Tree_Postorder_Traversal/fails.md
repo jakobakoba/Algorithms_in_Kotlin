@@ -42,3 +42,18 @@ answer.add(top.`val)
 
 Time limit exceeded
 - проверял top, а нужно было проверять top.right
+
+### 04/12/2024
+Line 18: Char 31: error: unresolved reference: visited
+if (top.right !in visited && top.right != lastVisited){
+- делал по памяти и зачем то влепил visited хотя в коде его даже не было
+
+Line 18: Char 27: error: none of the following functions can be called with the arguments supplied:
+- "!in null" написал и даже не заметил
+
+visited.add(top)
+- сверху исправил, но в коде оказался еще один visited. Все 3 ошибки из-за того, что пишешь по памяти, совершенно не думая что пишешь
+
+Line 23: Char 17: error: val cannot be reassigned
+lastVisited = top
+- просто пройдись по коду, не ленись

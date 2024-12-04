@@ -11,7 +11,7 @@ class Solution {
         
         val stack = mutableListOf<TreeNode>()
         
-        
+        // if cur == null then while loop will not start thanks to "cur != null" condition
         var cur = root
         
         while(cur != null || stack.isNotEmpty()){

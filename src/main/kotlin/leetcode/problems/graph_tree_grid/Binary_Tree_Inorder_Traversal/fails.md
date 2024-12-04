@@ -33,3 +33,12 @@ Line 21: Exception in thread "main" java.lang.NullPointerException: left must no
 Line 22: Exception in thread "main" java.lang.NullPointerException: left must not be null
 - cur = root!! если так написал и потом пишешь while(cur != null) надо дописать тип
 cur: TreeNode? = root!! чтобы было нуллабельным
+
+### 04/12/2024
+Line 3: Char 34: error: unresolved reference: ans
+if (root == null) return ans
+- невнимательность и не проверил перед отправкой
+
+Line 29: Char 22: error: only safe (?.) or non-null asserted (!!.) calls are allowed on a nullable receiver of type TreeNode?
+cur = cur.right
+- 

@@ -23,3 +23,5 @@ if (neighbor in visited || nr < 0 || nc < 0 || nr >= rows || nc >= cols ){
 проверил, но все равно не нашел эту ошибку перед отправкой. Line 26: Char 36: error: type 
 mismatch: inferred type is Int but Triple<Int, Int, Int>! was expected deque.addFirst(obstacles, nr, nc)
 - Triple() 
+### 04/12/2024
+забыл добавить neighbor в visited и словил tle

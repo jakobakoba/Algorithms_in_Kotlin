@@ -37,3 +37,12 @@ val queue : Queue<Int, Int> = LinkedList()
 Line 21: Char 38: error: function invocation 'step(...)' expected
 for (neighbor in adj[step]){
 - удалил переменную и потом ссылался на нее несуществующую
+
+### 04/12/2024
+Line 4: Char 46: error: passing value as a vararg is only allowed inside a parenthesized argument list
+val adj = Array(n){mutableListOf<Int>{0}} 
+- неправильно инициализировал mutableListOf, забыл скобки
+
+Line 3: Char 48: error: passing value as a vararg is only allowed inside a parenthesized argument list
+val adj = Array(n){mutableListOf<Int>(){0}}
+- а теперь понял, что {0} там не нужен
