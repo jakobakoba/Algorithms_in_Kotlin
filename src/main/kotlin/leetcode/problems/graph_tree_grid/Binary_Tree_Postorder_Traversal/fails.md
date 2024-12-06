@@ -57,3 +57,8 @@ visited.add(top)
 Line 23: Char 17: error: val cannot be reassigned
 lastVisited = top
 - просто пройдись по коду, не ленись
+
+### 06/12/2024
+Line 20: Char 27: error: type mismatch: inferred type is TreeNode but Int was expected
+stack.add(cur)
+- не заметил что в stack записан тип Int, хотя нужно было написать TreeNode

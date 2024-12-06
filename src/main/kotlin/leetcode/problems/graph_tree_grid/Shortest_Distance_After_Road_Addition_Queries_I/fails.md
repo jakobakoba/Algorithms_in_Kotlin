@@ -46,3 +46,7 @@ val adj = Array(n){mutableListOf<Int>{0}}
 Line 3: Char 48: error: passing value as a vararg is only allowed inside a parenthesized argument list
 val adj = Array(n){mutableListOf<Int>(){0}}
 - а теперь понял, что {0} там не нужен
+
+### 06/12/2024
+проверял код перед отправкой, но не учел возвращаемый тип. Должен был быть IntArray, а я возвращал List<Int>
+- не забудь проверить возвращаемый тип

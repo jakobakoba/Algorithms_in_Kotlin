@@ -25,3 +25,9 @@ mismatch: inferred type is Int but Triple<Int, Int, Int>! was expected deque.add
 - Triple() 
 ### 04/12/2024
 забыл добавить neighbor в visited и словил tle
+
+### 06/12/2024
+Line 16: Char 46: error: unexpected tokens (use ';' to separate expressions on the same line)
+val deque: Deque<Triple<Int,Int,Int>>() = LinkedList()
+- неправильно инициализировал deque. Не ленись! Проверь логику и синтаксис.
+
