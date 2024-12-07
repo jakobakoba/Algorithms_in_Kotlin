@@ -36,5 +36,6 @@
     1. 07/12/2024 - много ошибок
 13. Top K Frequent Elements
    1. 07/12/2024 - много ошибок 
+14. Minimum Limit of Balls in a Bag
 
     
