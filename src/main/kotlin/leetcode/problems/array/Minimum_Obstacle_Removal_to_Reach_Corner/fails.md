@@ -31,3 +31,7 @@ Line 16: Char 46: error: unexpected tokens (use ';' to separate expressions on t
 val deque: Deque<Triple<Int,Int,Int>>() = LinkedList()
 - неправильно инициализировал deque. Не ленись! Проверь логику и синтаксис.
 
+### 07/12/2024
+Line 43: Char 2: error: expecting a top level declaration
+}/
+- в mutableSetOf<Pair пытался сравнить с listOf(nr,nc)

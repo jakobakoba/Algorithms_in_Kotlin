@@ -9,3 +9,10 @@ WA 49/171
 Line 11: Char 29: error: function invocation 'first()' expected
 intervals.sortBy{it.first} 
 - у intArray нет first
+
+### 07/12/2024
+ошибка в том, что вернул IntArray, хотя нужен Array
+
+WA 49/171
+- не отсортировал, вижу что уже совершал такую ошибку. Над ошибкой не подумал и поэтому допустил еще раз.
+

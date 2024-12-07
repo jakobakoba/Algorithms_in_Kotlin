@@ -9,25 +9,32 @@
 (как удалил задачу, то сразу меняй тут, иначе забудешь и будет рассинхрон)
 
 1. Shortest Distance After Road Addition Queries I
-   6. 06/12/2024 повторил +++ ошибка
+   7. 07/12/2024 без ошибок
 2. Minimum Obstacle Removal to Reach Corner
-   3. 06/12/2024 повторил +++ ошибка
+   4. 07/12/2024 ошибка
 3. Minimum Time to Visit a Cell In a Grid 
-   4. 06/12/2024 повторил +++ четко +1
+   5. 07/12/2024 затуп
 4. Binary Tree Preorder Traversal
-   1. 06/12/2024 повторил +++ ошибка
+   2. 07/12/2024 ошибка
 5. Binary Tree Postorder Traversal
-   4. 06/12/2024 +++ ошибка
+   5. 07/12/2024 
 5. Binary Tree Inorder Traversal
-   4. 06/12/2024 +++ затуп
+   5. 07/12/2024 
 6. Subarray Sum Equals K 
-   2. 06/12/2024 +++ ошибка
+   3. 07/12/2024 - много ошибок
 7. Range Sum Query 2D - Immutable
-   2. 06/12/2024 +++ ошибка
+   3. 07/12/2024 - без ошибок
 8. Matrix Block Sum
-   2. 06/12/2024 +++ ошибка
+   3. 07/12/2024 - без ошибок 
 9. Rotate Array
-   1. 06/12/2024 +++ затуп + подсказка
+   2. 07/12/2024 - без ошибок
 10. Merge Intervals
+   1. 07/12/2024 - ошибки
+11. Minimum Number of Arrows to Burst Balloons
+    1. 07/12/2024 - ошибки
+12. Add Two Numbers
+    1. 07/12/2024 - много ошибок
+13. Top K Frequent Elements
+   1. 07/12/2024 - много ошибок 
 
     
