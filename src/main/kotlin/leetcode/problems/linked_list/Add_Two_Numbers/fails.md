@@ -19,8 +19,5 @@ val newValue = (c1.`val` + c2.`val` + leftover) % 10
 
 цифры и так стоят в reversed виде и поэтому нет необходимости делать reverse
 
-еще одна ошибка должна была быть, но увидел в подсказке
-- не добавил остаток после while c1 ?: c2
-
 MLE
 перепутал расчет newValue and carry. Должно быть newValue %10 и carry /10 

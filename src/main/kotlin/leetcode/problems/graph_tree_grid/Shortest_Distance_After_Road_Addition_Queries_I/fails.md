@@ -50,3 +50,8 @@ val adj = Array(n){mutableListOf<Int>(){0}}
 ### 06/12/2024
 проверял код перед отправкой, но не учел возвращаемый тип. Должен был быть IntArray, а я возвращал List<Int>
 - не забудь проверить возвращаемый тип
+
+### 08/12/2024
+Line 34: Char 16: error: type mismatch: inferred type is MutableList<Int> but IntArray was expected
+return ans
+- в последний момент когда отправил, понял что опять не заметил возвращаемый тип. Поймал ошибку 

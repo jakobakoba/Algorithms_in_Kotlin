@@ -23,7 +23,6 @@ class Solution {
             c1 = c1?.next
             c2 = c2?.next
         }
-        cur.next = c1 ?: c2
         
         return dummy.next
     }
