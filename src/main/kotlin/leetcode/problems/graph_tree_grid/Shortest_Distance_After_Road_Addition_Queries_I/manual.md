@@ -8,7 +8,7 @@ class Solution{
        
        val adj = Array(n) {mutableListOf<Int>()}
        
-       for (i in 0 until n){
+       for (i in 0 until n - 1){
         adj[i].add(i + 1)
        }
        

@@ -5,19 +5,11 @@
 и начал думать о чем-то постороннем из-за потери фокуса. 
 На собесах абсолютно такого не должно быть.
 
-1. Shortest Distance After Road Addition Queries I
-   8. 08/12/2024 затуп
-2. Minimum Obstacle Removal to Reach Corner
-   5. 08/12/2024 затуп + ошибка 
-3. Minimum Time to Visit a Cell In a Grid 
-   6. 08/12/2024 затуп (проверил перед отправкой основательно и исправил ошибки, приняло без ошибок)
-4. Merge Intervals
-    2. 08/12/2024 - ошибка
-5. Add Two Numbers
-    2. 08/12/2024 - затуп
-6. Top K Frequent Elements
-   2. 08/12/2024 - без ошибок и без затупа 
-7. Minimum Limit of Balls in a Bag
-   1. 08/12/2024 - затуп + ошибка
+1. Shortest Distance After Road Addition Queries I 09/12/2024 затуп + ошибка
+2. Minimum Obstacle Removal to Reach Corner 09/12/2024 затуп + ошибка
+3. Minimum Time to Visit a Cell In a Grid 09/12/2024 затуп
+4. Merge Intervals 09/12/2024 ошибка
+6. Top K Frequent Elements 09/12/2024 затуп
+7. Minimum Limit of Balls in a Bag 09/12/2024 затуп + ошибка
 
     

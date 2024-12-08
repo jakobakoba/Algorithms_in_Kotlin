@@ -39,3 +39,7 @@ Line 43: Char 2: error: expecting a top level declaration
 ### 08/12/2024
 Line 15: Char 17: error: variable expected if (r == rows - 1 && c = cols - 1) return obstacles
 - typo == and =
+
+### 09/12/2024 
+typo rc and nc
+- не проверял перед отправкой

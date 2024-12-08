@@ -5,7 +5,7 @@
 
 class Solution {
     fun minimumSize(nums: IntArray, maxOperations: Int): Int {
-        val maximus = nums.sumOf{it}
+        val maximus = nums.maxOf{it}
         
         var ans = maximus
         var left = 1

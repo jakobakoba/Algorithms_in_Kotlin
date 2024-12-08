@@ -8,3 +8,9 @@ WA 20/58
 - made a mistake writing ops < maxOperations, should be <=
 
 WA 54/58
+
+### 09/12/2024
+WA 0/58
+WA 1/58
+- к этим 2 ошибкам решение было minOf(ans, mid), а я писал 
+minOf(ans, ops)
