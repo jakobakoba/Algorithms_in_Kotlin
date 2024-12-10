@@ -14,3 +14,7 @@ WA 0/58
 WA 1/58
 - к этим 2 ошибкам решение было minOf(ans, mid), а я писал 
 minOf(ans, ops)
+
+### 10/12/2024
+compile error
+- тупая ошибка написал nums - 1 / mid, а надо было num - 1 / mid
