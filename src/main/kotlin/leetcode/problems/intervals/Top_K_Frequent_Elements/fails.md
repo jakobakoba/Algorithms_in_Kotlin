@@ -15,3 +15,7 @@ WA 5/21
 ### 10/12/2024
 compile error 
 - неправильно инициализировал map: написал mutableMapOf<Pair<Int,Int>> причем тут Pair непонятно
+
+### 11/12/2024
+compile error 
+- неправильный return type
