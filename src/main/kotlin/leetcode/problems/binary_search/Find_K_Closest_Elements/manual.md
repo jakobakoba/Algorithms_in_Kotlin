@@ -32,5 +32,7 @@ class Solution {
 
 **Описание решения**
 ```
+neetcode solution:
+https://www.youtube.com/watch?v=o-YDQzHoaKM
 
 ```
