@@ -5,13 +5,14 @@
 и начал думать о чем-то постороннем из-за потери фокуса. 
 На собесах абсолютно такого не должно быть.
 
-- Peak Index in a Mountain Array 12/12/2024 подсказка 
-- Search in Rotated Sorted Array 12/12/2024 подсказка
-- Find First and Last Position of Element in Sorted Array 12/12/2024 подсказка
-- Search a 2D Matrix 11/12/2024 12/12/2024 подсказка
-- Sqrt(x) 12/12/2024 подсказка 
-- Find K Closest Elements 12/12/2024 подсказка + вообще непонятно
-- Maximum Beauty of an Array After Applying Operation 12/12/2024 подсказка
+- Take Gifts From the Richest Pile 13/12/2024 подсказка
+- Peak Index in a Mountain Array 13/12/2024 подсказка 
+- Search in Rotated Sorted Array 13/12/2024 подсказка
+- Find First and Last Position of Element in Sorted Array 13/12/2024 подсказка
+- Search a 2D Matrix 13/12/2024 затуп
+- Sqrt(x) 13/12/2024 подсказка 
+- Find K Closest Elements 13/12/2024 подсказка + вообще непонятно
+- Maximum Beauty of an Array After Applying Operation 13/12/2024 подсказка
 
 
 
