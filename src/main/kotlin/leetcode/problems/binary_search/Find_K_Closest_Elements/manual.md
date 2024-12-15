@@ -10,7 +10,9 @@ class Solution {
 
         while(left <  right){
             val mid = (left + right) / 2
-
+            
+            // x-arr[mid] это как я понял левая сторона от квадрата
+            // arr[mid + k] - x это правая сторона
             if ((x - arr[mid]) > arr[mid + k] - x){
                 left = mid + 1
             } else {

@@ -15,3 +15,7 @@ WA 3/44
 изменил left = mid + 1 и получил WA 33/44
 
 WA 33/44
+- хз i'm writing this line on the next day 14/12/2024
+
+### 14/12/2024
+Time limit exceeded
