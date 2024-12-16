@@ -21,3 +21,6 @@ compile error
 
 compile error
 - ans должен быть Long
+
+### 16/12/2024
+WA 0/102

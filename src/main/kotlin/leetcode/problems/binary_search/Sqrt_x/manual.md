@@ -31,5 +31,12 @@ class Solution {
 
 **Описание решения**
 ```
+16
+mid 8 = 64 > 16 = right = mid - 1 = 7
+mid 4 = 16 <= 16 = left = mid + 1 = 5
+mid 6 = 36 > 16 = right = mid - 1 = 5
+mid 5 = 25 > 16 = right = mid - 1 = 4
+mid 4 = 16 <= 16 = left = mid + 1 = 5 (cycle quits left is 5 and right is 4)
+return right
 
 ```
