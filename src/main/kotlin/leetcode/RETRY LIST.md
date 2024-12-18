@@ -8,9 +8,7 @@
 - Sqrt(x) 18/12/2024 
 - Find K Closest Elements 18/12/2024 
 - Maximum Beauty of an Array After Applying Operation 18/12/2024 
-
-
-
+- Final Prices With a Special Discount in a Shop повторить O(n) решение
 
 
 
