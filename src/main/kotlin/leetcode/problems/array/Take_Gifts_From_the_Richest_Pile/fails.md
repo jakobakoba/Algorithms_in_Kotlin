@@ -30,3 +30,6 @@ compile error
 - забыл L в left = 1L
 
 WA 2/102 + изменение в код + получил TLE
+
+### 19/12/2024
+забыл добавить compareByDescending в priorityQueue
