@@ -9,6 +9,7 @@
 - Find K Closest Elements 19/12/2024 
 - Maximum Beauty of an Array After Applying Operation 19/12/2024 
 - Final Prices With a Special Discount in a Shop 19/12/2024
+- Max Chunks To Make Sorted
 
 
 
