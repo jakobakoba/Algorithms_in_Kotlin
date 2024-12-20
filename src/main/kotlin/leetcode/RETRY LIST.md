@@ -10,6 +10,7 @@
 - Maximum Beauty of an Array After Applying Operation 20/12/2024 хз почему работает, но решение я запомнил 
 - Final Prices With a Special Discount in a Shop 20/12/2024 ошибка
 - Max Chunks To Make Sorted 20/12/2024 классное решение, но немного забыл и условно минуту вспоминал
+- Reverse Odd Levels of Binary Tree
 
 
 
