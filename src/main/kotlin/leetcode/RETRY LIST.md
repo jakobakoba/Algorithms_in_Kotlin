@@ -6,6 +6,8 @@
 - Final Prices With a Special Discount in a Shop 21/12/2024 ошибка
 - Max Chunks To Make Sorted 21/12/2024 классное решение, но немного забыл и условно минуту вспоминал
 - Reverse Odd Levels of Binary Tree 21/12/2024 ошибка
+- Maximum Number of K-Divisible Components
+
 
 
 
