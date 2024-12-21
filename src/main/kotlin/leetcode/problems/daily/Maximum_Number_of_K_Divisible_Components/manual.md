@@ -46,4 +46,6 @@ class Solution {
 **Описание решения**
 ```
 Int не проходит, надо переводить в Long
+
+https://www.youtube.com/watch?v=xlgOaIK-inc
 ```
