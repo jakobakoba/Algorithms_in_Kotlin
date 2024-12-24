@@ -15,7 +15,7 @@ fun main() {
                     return (i + 3) / 3
                 }
             }
-            throw IllegalStateException("")
+            return 0
         }
     }
 }
