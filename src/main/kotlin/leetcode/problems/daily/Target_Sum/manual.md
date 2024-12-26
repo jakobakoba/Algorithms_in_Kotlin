@@ -33,5 +33,5 @@ class Solution {
 
 **Описание решения**
 ```
-
+https://www.youtube.com/watch?v=dwMOrl85Xes&t=27s
 ```
