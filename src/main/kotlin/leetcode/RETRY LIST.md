@@ -5,7 +5,8 @@
 - Target Sum 31/12/2024
 - Best Sightseeing Pair 31/12/2024
 - Count Ways To Build Good Strings 31/12/2024
-- 
+- Minimum Cost For Tickets
+
 
 
 
