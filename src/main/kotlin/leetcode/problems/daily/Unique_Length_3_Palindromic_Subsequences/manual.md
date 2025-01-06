@@ -5,30 +5,38 @@
 
 class Solution {
     fun countPalindromicSubsequence(s: String): Int {
-        val n = s.length
-        val set = mutableSetOf<String>()
         val start = IntArray(26){-1}
-        val end = IntArray(26){-1}
-
+        var end = IntArray(26)
+        val n = s.length
         for (i in 0 until n){
-            if (start[s[i] - 'a'] == -1) start[s[i] - 'a'] = i
-            end[s[i] - 'a'] = i
+            val index = s[i] - 'a'
+            if (start[index] == -1) {
+                start[index] = i
+            }
+            end[index] = i
         }
 
-        for (char in 'a'..'z'){
-            val seen = BooleanArray(26)
+        val ans = mutableSetOf<String>()
 
-                for (i in start[char - 'a'] + 1 until end[char - 'a']){
-                    seen[s[i] - 'a'] = true
+        for (char in 'a' .. 'z'){
+            val index = char - 'a'
+            if (start[index] != -1){
+                val first = start[index]
+                val last = end[index]
+
+                val visited = BooleanArray(26)
+                for (i in first + 1 until last){
+                    visited[s[i] - 'a'] = true
                 }
+
                 for (i in 0 until 26){
-                    if (seen[i] == true){
-                        set.add("$char${'a' + i}$char")
+                    if (visited[i]){
+                        ans.add("$char${'a' + i}$char")
                     }
                 }
-
+            }
         }
-        return set.size
+        return ans.size
     }
 }
 ```
