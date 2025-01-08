@@ -7,6 +7,7 @@
 - Unique Length-3 Palindromic Subsequences 08/01/2025
 - Shifting Letters II 08/01/2025
 - Minimum Number of Operations to Move All Balls to Each Box 08/01/2025
+- Count Prefix and Suffix Pairs I
 
 
 
