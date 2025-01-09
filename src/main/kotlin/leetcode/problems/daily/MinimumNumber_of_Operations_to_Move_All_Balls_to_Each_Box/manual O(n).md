@@ -41,4 +41,10 @@ class Solution {
 **Описание решения**
 ```
 https://www.youtube.com/watch?v=ZmH3gHiIqfI
+
+"moves += balls" means 
+each ball needs to move one more step, so:
+moves would increase by 3 (the number of balls), not because each ball 
+just moved one step in total, but because each ball needs one more step 
+to reach the new position from where they currently are.
 ```
