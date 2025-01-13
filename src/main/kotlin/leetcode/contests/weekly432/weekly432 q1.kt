@@ -1,6 +1,6 @@
 package leetcode.contests.weekly432
 
-
+//3417. Zigzag Grid Traversal With Skip
 fun main(){
     class Solution {
         fun zigzagTraversal(grid: Array<IntArray>): List<Int> {
