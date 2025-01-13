@@ -7,8 +7,6 @@ class Solution {
         val stack1 = mutableListOf<Int>()
         val stack2 = mutableListOf<Int>()
 
-        
-
         val n = s.length
         if (n % 2 != 0) return false
 
@@ -29,17 +27,15 @@ class Solution {
             }
         }
 
-        if (stack1.isNotEmpty() && stack2.isNotEmpty()){
-            for (i in stack1.size - 1 downTo 0){
-                if (stack2.isNotEmpty() && stack2.last() > stack1.last()){
-                    stack1.removeLast()
-                    stack2.removeLast()
-                } else {
-                    return false
-                }
+         while (stack1.isNotEmpty() && stack2.isNotEmpty()) {
+            if (stack2.last() > stack1.last()) {
+                stack1.removeLast()
+                stack2.removeLast()
+            } else {
+                return false
             }
         }
-        return true    
+        return stack1.isEmpty()
     }
 }
 
