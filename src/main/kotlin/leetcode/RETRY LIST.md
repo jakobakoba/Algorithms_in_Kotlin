@@ -1,9 +1,10 @@
 RETRY LIST:
 
-- weekly 432 q2 Maximum Amount of Money Robot Can Earn 18/01/2025
-- Minimize XOR 18/01/2025
-- Bitwise XOR of All Pairings 18/01/2025
-- Neighboring Bitwise XOR 18/01/2025
+- Minimize XOR 19/01/2025
+- Bitwise XOR of All Pairings 19/01/2025
+- Neighboring Bitwise XOR 19/01/2025
+- Minimum Cost to Make at Least One Valid Path in a Grid 19/01/2025
+- 
 
 
 
