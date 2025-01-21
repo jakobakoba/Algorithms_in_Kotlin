@@ -14,10 +14,8 @@ class Solution {
             return count
         }
 
-        val amount = bitCount(num2)
-
         var result = 0
-        var remaining = amount
+        var remaining = bitCount(num2)
       
         for (i in 31 downTo 0){
             if (num1 and (1 shl i) != 0){
