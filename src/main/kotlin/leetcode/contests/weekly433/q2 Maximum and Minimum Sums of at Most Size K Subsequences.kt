@@ -43,3 +43,11 @@ fun main() {
 }
 
 //https://www.youtube.com/watch?v=IfmQcGjhktg
+
+/*
+dp[i][j] = Number of ways to select j elements from the first i elements
+dp[0][0] = 1: There's one way to choose 0 items from 0 items.
+dp[i][0] = 1: There's one way to choose 0 items from i items (by choosing nothing).
+
+c: Represents the size of the subset being considered.
+ */
