@@ -5,36 +5,35 @@ package leetcode.contests.weekly433
 fun main() {
     class Solution {
         fun minMaxSums(nums: IntArray, k: Int): Int {
-            val MOD = 1_000_000_007
+            val MOD = 1000000007
 
             val n = nums.size
 
-            val dp = Array(n + 1) { IntArray(k + 1) }
-
+            val dp = Array(n + 1) {IntArray(k + 1)}
             dp[0][0] = 1
-            for (i in 1..n) {
+
+            for (i in 1 until n + 1){
                 dp[i][0] = 1
-                for (j in 1..k) {
-                    dp[i][j] = (dp[i - 1][j - 1] + dp[i - 1][j]) % MOD
+                for (j in 1 until k + 1){
+                    dp[i][j] = (dp[i-1][j-1] + dp[i-1][j]) % MOD
                 }
             }
-
-
             nums.sort()
             var total = 0L
-            for (i in 0 until n) {
-                for (c in 0 until minOf(i + 1, k)) {
-                    total += nums[i].toLong() * dp[i][c] % MOD
+            for (i in 0 until n){
+                for (j in 0 until minOf(i + 1, k)){
+                    total += nums[i].toLong() * dp[i][j] % MOD
                 }
-                total = total % MOD
+                total %= MOD
             }
+
             nums.reverse()
 
-            for (i in 0 until n) {
-                for (c in 0 until minOf(i + 1, k)) {
-                    total += nums[i].toLong() * dp[i][c] % MOD
+            for (i in 0 until n){
+                for (j in 0 until minOf(i + 1, k)){
+                    total += nums[i].toLong() * dp[i][j] % MOD
                 }
-                total = total % MOD
+                total %= MOD
             }
             return total.toInt()
         }

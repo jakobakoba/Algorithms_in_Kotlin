@@ -38,4 +38,16 @@ class Solution {
 ```
 https://www.youtube.com/watch?v=B90kG-ZlptE
 
+for (i in 0 until n){
+val top = prefix1[n] - prefix1[i + 1]
+
+for the above code. i + 1 because first robot takes everything i included and second robot starts from
+i + 1
+but prefix1[n] is the last element in the prefix, because LongArray(n + 1) starts with 0
+
+
+val bottom = if (i > 0) prefix2[i] else 0
+for the above code. this is prefix so i == 0 for prefix will be 0 no matter what
+i means sum of range from 0 to i - 1 
+
 ```
