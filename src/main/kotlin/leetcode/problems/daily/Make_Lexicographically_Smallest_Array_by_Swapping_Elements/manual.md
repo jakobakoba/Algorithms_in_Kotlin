@@ -35,5 +35,5 @@ class Solution {
 
 **Описание решения**
 ```
-
+https://www.youtube.com/watch?v=-FGl6dzPexY
 ```

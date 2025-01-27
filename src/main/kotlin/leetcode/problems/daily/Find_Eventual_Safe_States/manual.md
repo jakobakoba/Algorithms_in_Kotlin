@@ -45,5 +45,5 @@ class Solution {
 
 **Описание решения**
 ```
-
+https://www.youtube.com/watch?v=wciKkM3g3wQ
 ```

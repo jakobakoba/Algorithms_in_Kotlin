@@ -21,3 +21,9 @@
 ### 26/01/2025
 - выбросил throw на скобку раньше
 - не сохранил minCost в map
+
+### 27/01/2025
+- неправильно инициализировал deque. Забыл слово Deque 
+- перепутал grid and directions. Пытался вытащить nr and nc из directions.
+- перепутал grid[r][c] and grid[nr][nc]. Словил out of bounds error из за неправильного 
+grid[nr][nc]. 
