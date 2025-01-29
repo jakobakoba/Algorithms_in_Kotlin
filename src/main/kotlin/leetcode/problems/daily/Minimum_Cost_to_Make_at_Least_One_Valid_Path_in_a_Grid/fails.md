@@ -27,3 +27,6 @@
 - перепутал grid and directions. Пытался вытащить nr and nc из directions.
 - перепутал grid[r][c] and grid[nr][nc]. Словил out of bounds error из за неправильного 
 grid[nr][nc]. 
+
+### 29/01/2025
+- должно быть newCost >= minCost.getOrDefault, ">" это ошибка.
