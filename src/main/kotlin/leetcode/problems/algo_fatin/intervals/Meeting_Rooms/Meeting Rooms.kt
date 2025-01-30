@@ -1,4 +1,4 @@
-package leetcode.problems.intervals.Meeting_Rooms
+package leetcode.problems.algo_fatin.intervals.Meeting_Rooms
 
 fun main(){
     //answer = 2

@@ -1,4 +1,4 @@
-package leetcode.problems.linked_list.Palindrome_Linked_List
+package leetcode.problems.algo_fatin.linked_list.Palindrome_Linked_List
 //
 //class ListNode(var `val`: Int) {
 //         var next: ListNode? = null

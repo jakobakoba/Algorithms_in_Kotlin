@@ -1,4 +1,4 @@
-package leetcode.problems.array.Minimum_Obstacle_Removal_to_Reach_Corner
+package leetcode.problems.algo_fatin.array.Minimum_Obstacle_Removal_to_Reach_Corner
 
 import java.util.*
 

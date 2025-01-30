@@ -1,4 +1,4 @@
-package leetcode.problems.linked_list.Merge_k_Sorted_Lists
+package leetcode.problems.algo_fatin.linked_list.Merge_k_Sorted_Lists
 
 import java.util.*
 

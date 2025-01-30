@@ -1,4 +1,4 @@
-package leetcode.problems.graph_tree_grid.Minimum_Time_to_Visit_a_Cell_In_a_Grid
+package leetcode.problems.algo_fatin.graph_tree_grid.Minimum_Time_to_Visit_a_Cell_In_a_Grid
 
 import java.util.*
 import kotlin.math.abs
