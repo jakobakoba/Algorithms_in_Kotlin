@@ -7,4 +7,6 @@ RETRY LIST:
 - Redundant Connection 30/01/2025
 - Divide Nodes Into the Maximum Number of Groups 31/01/2025
 - Making A Large Island 01/02/2025
+- Check if Array Is Sorted and Rotated 03/01/2025
+- Find the Punishment Number of an Integer
 
