@@ -1,7 +1,7 @@
 RETRY LIST:
 
-- Minimum Cost to Make at Least One Valid Path in a Grid 01/02/2025
-- Maximum Employees to Be Invited to a Meeting 01/02/2025
+- Minimum Cost to Make at Least One Valid Path in a Grid 01/03/2025
+- Maximum Employees to Be Invited to a Meeting 01/03/2025
 - Course Schedule IV 01/02/2025
 - Maximum Number of Fish in a Grid 01/02/2025
 - Redundant Connection 30/01/2025
