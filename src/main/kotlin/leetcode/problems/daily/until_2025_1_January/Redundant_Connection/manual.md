@@ -51,5 +51,5 @@ class Solution {
 
 **Описание решения**
 ```
-
+https://www.youtube.com/watch?v=1lNK80tOTfc
 ```
