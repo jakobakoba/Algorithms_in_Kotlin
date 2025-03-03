@@ -10,5 +10,8 @@ RETRY LIST:
 - Check if Array Is Sorted and Rotated 02/03/2025
 - Find the Punishment Number of an Integer
 - Letter Tile Possibilities
+- Longest Common Subsequence 03/03/2025
+- Longest Palindromic Subsequence 03/03/2025
+- Longest Palindromic Subsequence After at Most K Operations 03/03/2025
 
 
