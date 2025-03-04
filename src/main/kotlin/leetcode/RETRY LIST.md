@@ -8,10 +8,13 @@ RETRY LIST:
 - Divide Nodes Into the Maximum Number of Groups 02/03/2025
 - Making A Large Island 02/03/2025
 - Check if Array Is Sorted and Rotated 02/03/2025
-- Find the Punishment Number of an Integer
+- Find the Punishment Number of an Integer 04/03/2025
 - Letter Tile Possibilities
 - Longest Common Subsequence 03/03/2025
 - Longest Palindromic Subsequence 03/03/2025
 - Longest Palindromic Subsequence After at Most K Operations 03/03/2025
-
+- Check if Number is a Sum of Powers of Three 04/03/2025
+- Subtree of Another Tree 04/03/2025
+- Permutation in String 04/03/2025
+- 
 
