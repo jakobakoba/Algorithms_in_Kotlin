@@ -58,5 +58,7 @@ class Solution {
 
 **Описание решения**
 ```
+0-1 BFS используется
+
 https://www.youtube.com/watch?v=3DwA6AsQvDI
 ```

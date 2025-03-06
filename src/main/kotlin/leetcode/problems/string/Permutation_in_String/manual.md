@@ -2,24 +2,8 @@
 
 ```
 class Solution {
-    fun checkInclusion(s1: String, s2: String): Boolean {
-        val n1 = s1.length
-        val n2 = s2.length
 
-        if (n1 > n2) return false
-
-        val freqS1 = IntArray(26)
-        for (c in s1){
-            freqS1[c - 'a']++
-        }
-
-        val diff = IntArray(26)
-        for (i in 0 until n1){
-            diff[s1[i] - 'a']--
-            diff[s2[i] - 'a']++
-        }
-
-        fun allZero(arr: IntArray): Boolean {
+   fun allZero(arr: IntArray): Boolean {
             for (x in arr){
                 if (x != 0){
                     return false
@@ -28,6 +12,19 @@ class Solution {
             return true
         }
 
+    fun checkInclusion(s1: String, s2: String): Boolean {
+        val n1 = s1.length
+        val n2 = s2.length
+
+        if (n1 > n2) return false
+
+        val diff = IntArray(26)
+        for (i in 0 until n1){
+            diff[s1[i] - 'a']--
+            diff[s2[i] - 'a']++
+        }
+
+     
         if (allZero(diff)){
             return true
         }
