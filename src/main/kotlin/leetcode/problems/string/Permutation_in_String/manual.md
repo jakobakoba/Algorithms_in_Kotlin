@@ -2,42 +2,36 @@
 
 ```
 class Solution {
-
-   fun allZero(arr: IntArray): Boolean {
-            for (x in arr){
-                if (x != 0){
-                    return false
-                }
+    fun isZero(arr: IntArray): Boolean {
+        for (num in arr){
+            if (num != 0){
+                return false
             }
-            return true
         }
-
+        return true
+    }
     fun checkInclusion(s1: String, s2: String): Boolean {
-        val n1 = s1.length
-        val n2 = s2.length
+        val diff = IntArray(26)
+        val (n1, n2) = listOf(s1.length, s2.length)
 
         if (n1 > n2) return false
 
-        val diff = IntArray(26)
         for (i in 0 until n1){
             diff[s1[i] - 'a']--
             diff[s2[i] - 'a']++
         }
-
-     
-        if (allZero(diff)){
-            return true
-        }
+        
+        var found = isZero(diff)
 
         for (i in n1 until n2){
             diff[s2[i] - 'a']++
             diff[s2[i - n1] - 'a']--
-
-            if (allZero(diff)){
-                return true
+            if (isZero(diff)) {
+                found = true
+                break
             }
         }
-        return false
+        return found
     }
 }
 
