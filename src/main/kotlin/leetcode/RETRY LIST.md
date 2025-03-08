@@ -15,4 +15,4 @@ RETRY LIST:
 - Check if Number is a Sum of Powers of Three 04/03/2025
 - Subtree of Another Tree 07/03/2025
 - Closest Prime Numbers in Range 07/03/2025
-
+- Minimum Recolors to Get K Consecutive Black Blocks 08/03/2025
