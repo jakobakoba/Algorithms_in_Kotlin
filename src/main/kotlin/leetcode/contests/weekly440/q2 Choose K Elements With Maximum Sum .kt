@@ -1,5 +1,5 @@
 package leetcode.contests.weekly440
-import java.util.*
+import java.util.PriorityQueue
 
 //Choose K Elements With Maximum Sum
 fun main(){
