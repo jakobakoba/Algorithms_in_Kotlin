@@ -17,3 +17,4 @@ RETRY LIST:
 - Closest Prime Numbers in Range 07/03/2025
 - Minimum Recolors to Get K Consecutive Black Blocks 08/03/2025
 - Alternating Groups II 09/03/2025
+- Count of Substrings Containing Every Vowel and K Consonants II
