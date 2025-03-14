@@ -9,7 +9,7 @@ RETRY LIST:
 - Check if Array Is Sorted and Rotated 02/03/2025
 - Find the Punishment Number of an Integer 04/03/2025
 - Letter Tile Possibilities
-- Longest Common Subsequence 03/03/2025
+- Longest Common Subsequence 14/03/2025
 - Longest Palindromic Subsequence 03/03/2025
 - Longest Palindromic Subsequence After at Most K Operations 03/03/2025
 - Check if Number is a Sum of Powers of Three 04/03/2025
@@ -20,4 +20,4 @@ RETRY LIST:
 - Count of Substrings Containing Every Vowel and K Consonants II
 - Number of Substrings Containing All Three Characters 11/03/2025
 - Line Reflection 12/03/2025
-- 
+- Zero Array Transformation II 14/03/2025
