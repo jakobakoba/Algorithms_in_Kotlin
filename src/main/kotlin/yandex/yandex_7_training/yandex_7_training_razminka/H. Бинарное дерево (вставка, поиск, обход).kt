@@ -1,9 +1,7 @@
-package yandex.yandex_6_training.yandex_6_training_4_dz
+package yandex.yandex_7_training.yandex_7_training_razminka
 
 import java.io.File
 import java.io.PrintWriter
-
-
 
 fun main(){
     data class TreeNode(var value: Int, var left: TreeNode? = null, var right: TreeNode? = null)
