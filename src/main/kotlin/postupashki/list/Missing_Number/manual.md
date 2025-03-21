@@ -13,7 +13,19 @@ class Solution {
         return (size * (size + 1) / 2) - sum
     }
 }
+
+solution 2:
+class Solution {
+    fun missingNumber(nums: IntArray): Int {
+        val n = nums.size
+        val target = n * (n + 1) / 2
+        val sum = nums.sum()
+        return target - sum
+    }
+}
 ```
+
+
 
 **Оценка по времени**: О(n)
 

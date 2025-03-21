@@ -1,0 +1,161 @@
+Day 1: Arrays - Basic Operations 21/03/2025
+1 Two Sum - Easy DONE+++
+2 Move Zeroes - Easy DONE+++
+3 Remove Duplicates from Sorted Array - Easy DONE+++
+4 Merge Sorted Array - Easy NEEDS TO BE REPEATED
+5 Squares of a Sorted Array - Easy NEEDS TO BE REPEATED
+6 Missing Number - Easy NEEDS TO BE REPEATED
+
+Day 2: Arrays - Subarrays and Sums 22/03/2025
+7 Subarray Sum Equals K - Medium
+8 Continuous Subarray Sum - Medium
+9 Minimum Size Subarray Sum - Medium
+10 Longest Subarray of 1’s After Deleting One Element - Medium
+11 Max Consecutive Ones II - Medium
+12 Max Consecutive Ones III - Medium
+
+Day 3: Arrays - Intervals 23/03/2025
+13 Merge Intervals - Medium
+14 Meeting Rooms II - Medium
+15 Interval List Intersections - Medium
+16 Insert Interval - Medium
+17 Non-overlapping Intervals - Medium
+18 Trapping Rain Water - Hard
+
+Day 4: Arrays - Rotated and Sorted Arrays 24/03/2025
+19 Search in Rotated Sorted Array - Medium
+20 Find Minimum in Rotated Sorted Array - Medium
+21 Two Sum II – Input Array Is Sorted - Easy
+22 Remove Duplicates from Sorted Array II - Medium
+23 Rotate Image - Medium
+24 Sort the Matrix Diagonally - Medium
+
+Day 5: Arrays - Multiple Pointers 25/03/2025
+25 3Sum - Medium
+26 Container With Most Water - Medium
+27 Sliding Window Maximum - Hard
+28 Product of Array Except Self - Medium
+29 Longest Consecutive Sequence - Medium
+30 Maximize Distance to Closest Person - Medium
+
+Day 6: Arrays - Frequency and Counting 26/03/2025
+31 Contains Duplicate - Easy
+32 Contains Duplicate II - Easy
+33 Contains Duplicate III - Medium
+34 Single Number - Easy
+35 Intersection of Two Arrays - Easy
+36 Intersection of Two Arrays II - Easy
+
+Day 7: Arrays - Advanced Techniques 27/03/2025
+37 Find the Difference of Two Arrays - Easy
+38 Majority Element - Easy
+39 Top K Frequent Elements - Medium
+40 Kth Largest Element in an Array - Medium
+41 H-Index - Medium
+42 Maximal Rectangle - Hard
+
+Day 8: Strings - Basic Checks 28/03/2025
+43 Valid Palindrome - Easy
+44 Is Subsequence - Easy
+45 Reverse String - Easy
+46 First Unique Character in a String - Easy
+47 Valid Anagram - Easy
+48 Palindrome Number - Easy
+
+Day 9: Strings - Substring Problems 29/03/2025
+49 Longest Substring Without Repeating Characters - Medium
+50 Longest Substring with At Most Two Distinct Characters - Medium
+51 Longest Substring with At Most K Distinct Characters - Medium
+52 Minimum Window Substring - Hard
+53 Permutation in String - Medium
+54 Find All Anagrams in a String - Medium
+
+Day 10: Strings - Palindromes and Compression 30/03/2025
+55 Longest Palindromic Substring - Medium
+56 Palindrome Pairs - Hard
+57 String Compression - Medium
+58 Restore IP Addresses - Medium
+59 One Edit Distance - Medium
+60 Isomorphic Strings - Easy
+
+Day 11: Strings - Manipulation and Partitioning 31/03/2025
+61 Reverse Words in a String III - Easy
+62 Add Strings - Easy
+63 Simplify Path - Medium
+64 Consecutive Characters - Easy
+65 Partition Labels - Medium
+66 Longest Repeating Character Replacement - Medium
+
+Day 12: Linked Lists 01/04/2025
+67 Reverse Linked List - Easy
+68 Merge Two Sorted Lists - Easy
+69 Add Two Numbers - Medium
+70 Remove Nth Node From End of List - Medium
+71 Palindrome Linked List - Easy
+72 Linked List Cycle - Easy
+
+Day 13: Trees - Basic Properties 02/04/2025
+73 Symmetric Tree - Easy
+74 Maximum Depth of Binary Tree - Easy
+75 Balanced Binary Tree - Easy
+76 Sum of Left Leaves - Easy
+77 Range Sum of BST - Easy
+78 Binary Tree Right Side View - Medium
+
+Day 14: Trees - Advanced Traversal and LCA 03/04/2025
+79 Validate Binary Search Tree - Medium
+80 Lowest Common Ancestor of a Binary Search Tree - Medium
+81 Lowest Common Ancestor of a Binary Tree - Medium
+82 Lowest Common Ancestor of a Binary Tree III - Medium
+83 Binary Tree Maximum Path Sum - Hard
+84 Binary Tree Zigzag Level Order Traversal - Medium
+
+Day 15: Graphs and Dynamic Programming 04/04/2025
+85 Number of Islands - Medium
+86 Island Perimeter - Easy
+87 Reconstruct Itinerary - Hard
+88 Generate Parentheses - Medium
+89 Perfect Squares - Medium
+90 Longest Increasing Subsequence - Medium
+
+Day 16: Dynamic Programming and Miscellaneous 05/04/2025
+91 Climbing Stairs - Easy
+92 Candy - Hard
+93 Remove Invalid Parentheses - Hard
+94 Line Reflection - Medium
+95 Number of Recent Calls - Easy
+96 Implement Rand10() Using Rand7() - Medium
+
+Day 17: Design - Stacks and Queues 06/04/2025
+97 Implement Queue using Stacks - Easy
+98 Min Stack - Easy
+99 Max Stack - Easy
+100 Valid Parentheses - Easy
+101 Flatten Nested List Iterator - Medium
+102 Design Hit Counter - Medium
+
+Day 18: Design - Advanced Data Structures 07/04/2025
+103 Insert Delete GetRandom O(1) - Medium
+104 LRU Cache - Medium
+105 Design an ATM Machine - Medium
+106 Zigzag Iterator - Medium
+107 Evaluate Reverse Polish Notation - Medium
+108 Jewels and Stones - Easy
+
+Day 19: Mixed Topics - Arrays and Matrices 08/04/2025
+109 Median of Two Sorted Arrays - Hard
+110 Search a 2D Matrix - Medium
+111 Valid Sudoku - Medium
+112 Best Time to Buy and Sell Stock - Easy
+113 Best Time to Buy and Sell Stock II - Easy
+114 Reverse Integer - Medium
+
+Day 20: Mixed Topics - Wrap-Up (7 Problems) 09/04/2025
+115 Merge k Sorted Lists - Hard
+116 Group Anagrams - Medium
+117 Remove Element - Easy
+118 Longest Substring with At Least K Repeating Characters - Medium
+119 Find the Index of the First Occurrence in a String - Easy
+120 Edit Distance - Hard
+121 Median of Two Sorted Arrays - Hard
+
