@@ -1,18 +1,22 @@
-Day 1: Arrays - Basic Operations 21/03/2025
-1 Two Sum - Easy DONE+++
-2 Move Zeroes - Easy DONE+++
-3 Remove Duplicates from Sorted Array - Easy DONE+++
-4 Merge Sorted Array - Easy NEEDS TO BE REPEATED
-5 Squares of a Sorted Array - Easy NEEDS TO BE REPEATED
-6 Missing Number - Easy NEEDS TO BE REPEATED
+DONE+++ - сам решил, без ошибок и не напрягаясь. На собесе без ошибок сделаю
+NEEDS TO BE REPEATED+++ - ошибся, подсмотрел, долго думал. Задачу разобрал.
 
-Day 2: Arrays - Subarrays and Sums 22/03/2025
-7 Subarray Sum Equals K - Medium
-8 Continuous Subarray Sum - Medium
-9 Minimum Size Subarray Sum - Medium
-10 Longest Subarray of 1’s After Deleting One Element - Medium
-11 Max Consecutive Ones II - Medium
-12 Max Consecutive Ones III - Medium
+Day 1: Arrays - Basic Operations 21/03/2025+++
+1 Two Sum - DONE+++
+2 Move Zeroes - DONE+++
+3 Remove Duplicates from Sorted Array - DONE+++
+4 Merge Sorted Array - NEEDS TO BE REPEATED+++
+5 Squares of a Sorted Array - NEEDS TO BE REPEATED+++
+6 Missing Number - NEEDS TO BE REPEATED+++
+
+Day 2: Arrays - Subarrays and Sums 22/03/2025+++
+7 Subarray Sum Equals K - NEEDS TO BE REPEATED+++
+8 Continuous Subarray Sum - NEEDS TO BE REPEATED+++
+9 Minimum Size Subarray Sum - NEEDS TO BE REPEATED+++
+10 Longest Subarray of 1’s After Deleting One Element - DONE+++
+10-11 моя инициатива Max Consecutive Ones - DONE+++
+11 Max Consecutive Ones II (PREMIUM, Lintcode available) - DONE+++
+12 Max Consecutive Ones III - DONE+++
 
 Day 3: Arrays - Intervals 23/03/2025
 13 Merge Intervals - Medium
