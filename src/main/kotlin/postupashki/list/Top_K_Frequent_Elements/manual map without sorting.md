@@ -10,8 +10,6 @@ class Solution{
             map[num] = map.getOrDefault(num,0) + 1
         }
         
-        // если элементов например 11, то нужно создать массив с size 12
-        // тогда 12 index будет ложиться на 11, а 0 индекс будет пустым
         
         val ans = Array(nums.size + 1){mutableListOf<Int>()}
         for ((key,value) in map){
@@ -30,7 +28,7 @@ class Solution{
 }
 ```
 
-**Оценка по времени**: О(nlogn)
+**Оценка по времени**: О(n)
 
 
 **Оценка по памяти**: О(n)
