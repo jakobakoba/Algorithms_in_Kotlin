@@ -3,6 +3,7 @@ package yandex.yandex_7_training.yandex_7_training_razminka
 //B. Покупка билетов
 
 fun main(){
+
     val n = readln().toInt()
     val a = IntArray(n + 1)
     val b = IntArray(n + 1)
@@ -30,3 +31,9 @@ fun main(){
     }
     println(dp[n])
 }
+
+/*
+всегда используй trim при получении input, в этой задаче без trim() ломается код
+ */
+
+

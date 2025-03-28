@@ -125,10 +125,11 @@ Day 15: Graphs and Dynamic Programming 04/04/2025
 87 Reconstruct Itinerary - Hard
 88 Generate Parentheses - Medium
 89 Perfect Squares - Medium
-90 Longest Increasing Subsequence - Medium
+90 Longest Increasing Subsequence - NEEDS TO BE REPEATED+++ (should look for nlogn solution)
 
 Day 16: Dynamic Programming and Miscellaneous 05/04/2025
-91 Climbing Stairs - Easy
+91 Climbing Stairs - NEEDS TO BE REPEATED+++
+91-92 моя инициатива Min Cost Climbing Stairs - NEEDS TO BE REPEATED+++
 92 Candy - Hard
 93 Remove Invalid Parentheses - Hard
 94 Line Reflection - Medium
