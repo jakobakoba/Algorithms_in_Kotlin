@@ -1,6 +1,4 @@
-package leetcode.problems.daily.year_2025_3_March.Count_of_Substrings_Containing_Every_Vowel_and_K_Consonants_II
-
-import java.util.*
+package leetcode.daily.year_2025_3_March.Count_of_Substrings_Containing_Every_Vowel_and_K_Consonants_II
 
 class Solution {
 

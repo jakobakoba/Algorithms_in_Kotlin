@@ -1,4 +1,4 @@
-package leetcode.problems.daily.year_2025_3_March.Minimum_Operations_to_Make_a_Uni_Value_Grid
+package leetcode.daily.year_2025_3_March.Minimum_Operations_to_Make_a_Uni_Value_Grid
 
 class Solution {
     fun minOperations(grid: Array<IntArray>, x: Int): Int {

@@ -1,4 +1,4 @@
-package leetcode.problems.daily.year_2025_3_March.Minimum_Cost_Walk_in_Weighted_Graph
+package leetcode.daily.year_2025_3_March.Minimum_Cost_Walk_in_Weighted_Graph
 //3108. Minimum Cost Walk in Weighted Graph
 
 fun main(){
