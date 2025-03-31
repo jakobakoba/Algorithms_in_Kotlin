@@ -17,11 +17,10 @@ class Solution {
     fun palindromePairs(words: Array<String>): List<List<Int>> {
         val indexMap = words.withIndex().associate { it.value to it.index }
         val result = mutableSetOf<List<Int>>()
-        var emptyIndex: Int? = null
 
     
         if ("" in indexMap) {
-            emptyIndex = indexMap[""]
+            val emptyIndex = indexMap[""]
             for ((i, word) in words.withIndex()) {
                 if (i != emptyIndex && isPalindrome(word, 0, word.length - 1)) {
                     result.add(listOf(emptyIndex!!, i))

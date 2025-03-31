@@ -19,10 +19,13 @@ class Solution:
             
         for idx in range(len_t):
             if s[idx] != t[idx]:
+                //вот тут замена s[i] to t[i], и проверяем, что оставшаяся часть строк совпадает.
                 if len_s == len_t:
                     return s[idx + 1:] == t[idx + 1:]
+                // вот тут удаление то есть s[i] удаляется, и оставшаяся часть совпадает с t.
                 else:
                     return s[idx + 1:] == t[idx:]
+        //тут вставка одно символа в s
         return len_s == len_t + 1
 ```
 
@@ -34,7 +37,10 @@ class Solution:
 
 **Описание решения**
 ```
+бесплатно:
+https://www.lintcode.com/problem/640/
 
+разбор:
 https://algo.monster/liteproblems/161
 ```
 
