@@ -10,25 +10,30 @@
  *     var next: ListNode? = null
  * }
  */
-
-class Solution{
+class Solution {
     fun mergeTwoLists(list1: ListNode?, list2: ListNode?): ListNode? {
-        val dummy = ListNode(0)
+        
+        val dummy = ListNode()
+
         var cur = dummy
-        var l = list1
-        var r = list2
-        while(l != null && r != null){
-            if (l.`val` < r.`val`){
-                cur.next = l
-                l = l.next
+
+        var l1 = list1
+        var l2 = list2
+
+
+        while(l1 != null && l2 != null){
+            if (l1.`val` < l2.`val`){
+                cur.next = l1
+                l1 = l1.next
             } else {
-                cur.next = r
-                r = r.next
+                cur.next = l2
+                l2 = l2.next
             }
             cur = cur.next
         }
-        
-        cur.next = l ?: r
+
+        cur.next = l1 ?: l2
+
         return dummy.next
     }
 }
