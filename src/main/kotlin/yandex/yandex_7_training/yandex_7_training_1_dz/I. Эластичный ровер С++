@@ -1,0 +1,204 @@
+#include <iostream>
+#include <vector>
+#include <numeric>
+#include <algorithm>
+#include <climits>
+#include <vector>
+
+using namespace std;
+
+const long long INF_P = LLONG_MAX;
+
+struct Item {
+    int id;
+    int v;
+    long long c;
+    long long p;
+};
+
+struct DpState {
+    long long cost;
+    long long min_p;
+
+    DpState() : cost(-1), min_p(-1) {}
+
+    DpState(long long _cost, long long _min_p) : cost(_cost), min_p(_min_p) {}
+
+    bool is_better_than(const DpState& other) const {
+
+        if (other.cost == -1) return (cost != -1);
+
+        if (cost == -1) return false;
+
+
+        if (cost > other.cost) return true;
+
+        if (cost == other.cost && min_p > other.min_p) return true;
+
+
+        return false;
+    }
+
+    bool operator==(const DpState& other) const {
+        return cost == other.cost && min_p == other.min_p;
+    }
+
+    bool operator!=(const DpState& other) const {
+        return !(*this == other);
+    }
+};
+
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+
+    int n;
+    long long s;
+    cin >> n >> s;
+
+    vector<Item> items;
+    items.reserve(n);
+    long long total_possible_v_ll = 0;
+
+    for (int i = 0; i < n; ++i) {
+        int v;
+        long long c, p;
+        cin >> v >> c >> p;
+
+
+        if (v > 0 && p >= 0 && c >= 0) {
+            Item temp_item;
+            temp_item.id = i + 1;
+            temp_item.v = v;
+            temp_item.c = c;
+            temp_item.p = p;
+            items.push_back(temp_item);
+            total_possible_v_ll += v;
+        }
+    }
+
+    int n_actual = items.size();
+
+    if (n_actual == 0) {
+        cout << "0 0\n";
+        return 0;
+    }
+
+    int V_max = 0;
+
+    if (total_possible_v_ll > INT_MAX) {
+
+         V_max = INT_MAX;
+    } else {
+       V_max = static_cast<int>(total_possible_v_ll);
+    }
+
+    if (V_max < 0) V_max = 0;
+
+    if (V_max == 0) {
+        cout << "0 0\n";
+        return 0;
+    }
+    vector<vector<DpState> > dp(n_actual + 1, vector<DpState>(V_max + 1));
+
+    dp[0][0] = DpState(0, INF_P);
+    for (int i = 0; i < n_actual; ++i) {
+        const Item& item = items[i];
+        int iv = item.v;
+        long long ic = item.c;
+        long long ip = item.p;
+
+        for (int v = 0; v <= V_max; ++v) {
+            DpState state_without_item = dp[i][v];
+            DpState state_with_item;
+            if (v >= iv) {
+                if (dp[i][v - iv].cost != -1) {
+                    const DpState& prev_state = dp[i][v - iv];
+
+                    long long new_cost = prev_state.cost + ic;
+                    long long new_min_p = min(prev_state.min_p, ip);
+
+                    long long required_p = 0;
+                    if ((long long)v > s) {
+
+                        required_p = (long long)v - s;
+                    }
+
+                    if (new_min_p >= required_p) {
+                        state_with_item = DpState(new_cost, new_min_p);
+                    }
+                }
+            }
+
+            if (state_with_item.is_better_than(state_without_item)) {
+                dp[i+1][v] = state_with_item;
+            } else {
+                dp[i+1][v] = state_without_item;
+            }
+        }
+    }
+
+    long long max_overall_cost = 0;
+    int best_u = 0;
+
+    for (int u = 0; u <= V_max; ++u) {
+
+        if (dp[n_actual][u].cost != -1) {
+
+             if (dp[n_actual][u].cost > max_overall_cost) {
+                 max_overall_cost = dp[n_actual][u].cost;
+                 best_u = u;
+             }
+
+        }
+    }
+
+    if (max_overall_cost <= 0) {
+        cout << "0 0\n";
+        return 0;
+    }
+
+
+
+    vector<int> selected_indices;
+    selected_indices.reserve(n_actual);
+    int curr_v = best_u;
+
+
+    for (int i = n_actual; i > 0 && curr_v > 0; --i) {
+
+        const Item& item = items[i-1];
+        int iv = item.v;
+
+
+        const DpState& current_optimal_state = dp[i][curr_v];
+
+        const DpState& state_without_current_item = dp[i-1][curr_v];
+
+
+        if (current_optimal_state != state_without_current_item) {
+
+            selected_indices.push_back(item.id);
+            curr_v -= iv;
+
+
+            if (curr_v < 0) {
+                 cout << "0 0\n";
+                 return 1;
+            }
+        }
+
+    }
+
+
+    cout << selected_indices.size() << " " << max_overall_cost << "\n";
+
+    sort(selected_indices.begin(), selected_indices.end());
+
+    for (int k = 0; k < selected_indices.size(); ++k) {
+        cout << selected_indices[k] << (k == selected_indices.size() - 1 ? "" : " ");
+    }
+    cout << "\n";
+
+    return 0;
+}
