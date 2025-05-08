@@ -42,12 +42,6 @@ fun main(){
 
         outputWriter.println(ans)
 
-
-
-
-
-
-
     }
 
     outputWriter.close()

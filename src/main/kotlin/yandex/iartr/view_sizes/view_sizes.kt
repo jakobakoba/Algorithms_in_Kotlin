@@ -23,22 +23,47 @@ package yandex.iartr.view_sizes
     Итоговые размеры: listOf(50, 30, 20)
  */
 
+//fun main(){
+//    fun measureWidths(parentWidth: Int, childSpecs: List<Int>): List<Int> {
+//        val fixedWidth = childSpecs.filter{it > 0}.sum()
+//
+//        val remainingWidth = parentWidth - fixedWidth
+//
+//        val totalRatio = childSpecs.filter { it <= 0 }.sumOf{-it}
+//
+//        return childSpecs.map{spec ->
+//                if (spec > 0){
+//                    spec
+//                } else {
+//                    -spec * remainingWidth / totalRatio
+//                }
+//        }
+//    }
+//
+//    println(measureWidths(100, listOf(50, -3, -2)))
+//}
+
 fun main(){
-    fun measureWidths(parentWidth: Int, childSpecs: List<Int>): List<Int> {
-        val fixedWidth = childSpecs.filter{it > 0}.sum()
-
-        val remainingWidth = parentWidth - fixedWidth
-
-        val totalRatio = childSpecs.filter { it <= 0 }.sumOf{-it}
-
-        return childSpecs.map{spec ->
-                if (spec > 0){
-                    spec
-                } else {
-                    -spec * remainingWidth / totalRatio
-                }
+    fun measure(parentWidth: Int, childSpecs: List<Int>): List<Int>{
+        var total = 0
+        val ans = IntArray(childSpecs.size){-1}
+        var leftover = parentWidth
+        for (i in 0 until childSpecs.size){
+            if (childSpecs[i] < 0){
+                total += -(childSpecs[i])
+            } else if (childSpecs[i] > 0){
+                ans[i] = childSpecs[i]
+                leftover -= childSpecs[i]
+            }
         }
+
+        for (i in 0 until childSpecs.size){
+            if (ans[i] == -1){
+                ans[i] = leftover * (-childSpecs[i]) / total
+            }
+        }
+        return ans.toList()
     }
 
-    println(measureWidths(100, listOf(50, -3, -2)))
+    println(measure(100, listOf(50, -3, -2)))
 }
