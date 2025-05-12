@@ -4,30 +4,26 @@
 ```
 class Solution {
     fun generateParenthesis(n: Int): List<String> {
-        val stack = mutableListOf<Char>()
-        val res = mutableListOf<String>()
+        
+        val ans = mutableListOf<String>()
 
-        fun backtrack(left: Int, right: Int){
-            if (left == right && right == n){
-                res.add(stack.joinToString(""))
+        fun backtrack(opening: Int, closing: Int, cur: String){
+            if (opening > n ) return
+
+            if (cur.length == n * 2){
+                ans.add(cur)
                 return
             }
 
-            if(left < n){
-                stack.add('(')
-                backtrack(left+1, right)
-                stack.removeLast()
-            }
-
-            if (right < left){
-                stack.add(')')
-                backtrack(left, right + 1)
-                stack.removeLast()
+            if (opening < n){
+                backtrack(opening + 1, closing, cur + "(")
+            } 
+            if (closing < opening){
+                backtrack(opening, closing + 1, cur + ")")
             }
         }
-
-        backtrack(0,0)
-        return res
+        backtrack(0,0,"")
+        return ans
     }
 }
 
