@@ -4,24 +4,24 @@ NEEDS TO BE REPEATED+++ - ошибся, подсмотрел, долго дум�
 РЕШЕНИЕ ДОЛЖНО ВЫСТРЕЛИВАТЬ НА УРОВНЕ РЕФЛЕКСОВ УЖЕ НА ЭТАПЕ ЧТЕНИЯ УСЛОВИЯ.
 
 Day 1: Arrays - Basic Operations 21/03/2025+++
-1 Two Sum - DONE+++ REPEATED
-2 Move Zeroes - DONE+++ REPEATED
-3 Remove Duplicates from Sorted Array - DONE+++ REPEATED
-4 Merge Sorted Array - NEEDS TO BE REPEATED+++ REPEATED
-5 Squares of a Sorted Array - NEEDS TO BE REPEATED+++ REPEATED
-6 Missing Number - NEEDS TO BE REPEATED+++ REPEATED
+1 Two Sum - REPEATED
+2 Move Zeroes - REPEATED
+3 Remove Duplicates from Sorted Array - REPEATED
+4 Merge Sorted Array - REPEATED
+5 Squares of a Sorted Array - REPEATED
+6 Missing Number - REPEATED
 
 Day 2: Arrays - Subarrays and Sums 22/03/2025+++
-7 Subarray Sum Equals K - NEEDS TO BE REPEATED+++ REPEATED
-8 Continuous Subarray Sum - NEEDS TO BE REPEATED+++ REPEATED
-9 Minimum Size Subarray Sum - NEEDS TO BE REPEATED+++ REPEATED
+7 Subarray Sum Equals K - REPEATED
+8 Continuous Subarray Sum - REPEATED
+9 Minimum Size Subarray Sum - REPEATED
 10 Longest Subarray of 1’s After Deleting One Element - DONE+++
 10-11 моя инициатива Max Consecutive Ones - DONE+++
 11 Max Consecutive Ones II (PREMIUM, Lintcode available) - DONE+++
 12 Max Consecutive Ones III - DONE+++
 
 Day 3: Arrays - Intervals 23/03/2025+++
-13 Merge Intervals - NEEDS TO BE REPEATED+++ REPEATED
+13 Merge Intervals - REPEATED
 13-14 моя инициатива Meeting Rooms (PREMIUM, Lintcode available) - DONE+++
 14 Meeting Rooms II (PREMIUM, Lintcode available) - NEEDS TO BE REPEATED+++
 15 Interval List Intersections - NEEDS TO BE REPEATED+++
@@ -146,7 +146,7 @@ Day 17: Design - Stacks and Queues 06/04/2025
 
 Day 18: Design - Advanced Data Structures 07/04/2025
 103 Insert Delete GetRandom O(1) - NEEDS TO BE REPEATED+++
-104 LRU Cache - NEEDS TO BE REPEATED+++
+104 LRU Cache - REPEATED
 105 Design an ATM Machine - NEEDS TO BE REPEATED+++
 106 Zigzag Iterator (PREMIUM, Lintcode available) - NEEDS TO BE REPEATED+++
 107 Evaluate Reverse Polish Notation - NEEDS TO BE REPEATED+++

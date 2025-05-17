@@ -1,7 +1,5 @@
 ## 2901. Longest Unequal Adjacent Groups Subsequence II
 
-
-
 ``` 
 class Solution {
     fun getWordsInLongestSubsequence(words: Array<String>, groups: IntArray): List<String> {

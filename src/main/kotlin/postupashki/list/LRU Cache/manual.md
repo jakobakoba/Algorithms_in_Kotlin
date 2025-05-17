@@ -2,42 +2,50 @@
 
 
 ```
-class Node(val key: Int, val `val`: Int){
-    var prev: Node? = null
-    var next: Node? = null
-}
-
 class LRUCache(val capacity: Int) {
 
-    val cache = mutableMapOf<Int,Node>()
+    class Node(
+        val key: Int,
+        val value: Int,
+        var prev: Node? = null,
+        var next: Node? = null
+    )
 
-    var left = Node(0,0)
-    var right = Node(0,0)
+    val left = Node(0,0)
+    val right = Node(0,0)
 
     init {
         left.next = right
         right.prev = left
     }
 
+    val cache = mutableMapOf<Int,Node>()
+
     fun remove(node: Node){
-        val (prev, next) = listOf(node.prev!!, node.next!!)
+        val prev = node.prev!!
+        val next = node.next!!
+
         prev.next = next
         next.prev = prev
     }
 
     fun insert(node: Node){
-        val (prev, next) = listOf(right.prev!!, right!!)
-        prev.next = node
-        next.prev = node
-        node.prev = prev
-        node.next = next
+        val left = right.prev!!
+        val right = right!!
+
+        node.next = right
+        node.prev = left
+        left.next = node
+        right.prev = node
     }
+
 
     fun get(key: Int): Int {
         if (key in cache){
-            remove(cache[key]!!)
-            insert(cache[key]!!)
-            return cache[key]!!.`val`
+            val node = cache[key]!!
+            remove(node)
+            insert(node)
+            return node.value
         }
         return -1
     }
@@ -46,6 +54,7 @@ class LRUCache(val capacity: Int) {
         if (key in cache){
             remove(cache[key]!!)
         }
+
         cache[key] = Node(key, value)
 
         insert(cache[key]!!)
@@ -65,7 +74,6 @@ class LRUCache(val capacity: Int) {
  * var param_1 = obj.get(key)
  * obj.put(key,value)
  */
-
 ```
 
 **Оценка по времени**: О(1)
