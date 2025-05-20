@@ -1,13 +1,15 @@
-1) lru cache DONE
-2) number of islands DONE
-3) наибольшая подстрока без повторяющихся символов DONE
-4) simplify path
-5) accounts merge
+19/05/2025
+x1) lru cache Хорошо пошло
+x2) number of islands Хорошо пошло
+x3) Longest Substring Without Repeating Characters Хорошо пошло
+x4) simplify path НОРМАС
+5) accounts merge Надо повторить
 6) минимальная панграмма https://t.me/algoses/305
-7) jump game
+7) jump game НОРМАС
 8) направления https://t.me/algoses/294
-9) Symmetric Tree
+x9) Symmetric Tree Хорошо пошло
 10) повторения символов https://t.me/algoses/288
+
 11) string compression
 12) find pivot index
 13) number of sub-arrays with odd sum (от 15 задачи)

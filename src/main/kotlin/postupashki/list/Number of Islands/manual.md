@@ -66,12 +66,16 @@ dfs
 ```
 class Solution {
     fun numIslands(grid: Array<CharArray>): Int {
-        val seen = mutableSetOf<Pair<Int,Int>>()
-        val (m, n) = listOf(grid.size, grid[0].size)
+        val n = grid.size
+        val m = grid[0].size
 
         var counter = 0
-        fun dfs(i: Int, j: Int){
-            seen.add(Pair(i,j))
+
+        val visited = mutableSetOf<Pair<Int,Int>>()
+
+        fun dfs(i : Int, j : Int) {
+            visited.add(i to j)
+
             val neighbors = listOf(
                 Pair(i + 1, j),
                 Pair(i - 1, j),
@@ -80,20 +84,22 @@ class Solution {
             )
 
             for ((nr, nc) in neighbors){
-                if (nr in 0 until m && nc in 0 until n && grid[nr][nc] == '1' && Pair(nr, nc) !in seen){
-                    dfs(nr,nc)
+                if (nr !in 0 until n || nc !in 0 until m || grid[nr][nc] == '0' || nr to nc in visited){
+                    continue
                 }
+                dfs(nr, nc)
             }
         }
-        for (i in 0 until m){
-            for (j in 0 until n){
-                if (grid[i][j] == '1' && Pair(i,j) !in seen){
+        for (i in 0 until n){
+            for (j in 0 until m){
+                if (grid[i][j] == '1' && i to j !in visited){
                     counter++
                     dfs(i, j)
                 }
             }
         }
         return counter
+
     }
 }
 ```

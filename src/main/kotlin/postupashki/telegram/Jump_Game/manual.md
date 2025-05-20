@@ -69,3 +69,57 @@ class Solution {
 ```
 
 ```
+
+TIME LIMIT EXCEEDED без dp чистая рекурсия
+```
+class Solution {
+fun canJump(nums: IntArray): Boolean {
+val n = nums.size
+
+        fun helper(i: Int): Boolean {
+            if (i >= n) return false
+            if (i == n - 1){
+                return true
+            }
+
+            var maxSteps = nums[i]
+
+            for (j in 1 .. maxSteps){
+                if (helper(i + j)){
+                    return true
+                }
+            }
+            return false
+        }
+
+        return helper(0)
+    }
+}
+```
+
+рекурсия с memoization
+```
+class Solution {
+    fun canJump(nums: IntArray): Boolean {
+        val n = nums.size
+
+        val dp = IntArray(n){-1}
+        fun helper(i: Int ): Boolean {
+            if (i >= n) return false
+            if (i == n - 1) return true
+            if (dp[i] != -1) return dp[i] == 1
+
+            val steps = nums[i]
+            for (j in 1 .. steps){
+                if (helper(i + j)){
+                    dp[i] = 1
+                    return true
+                }
+            }
+            dp[i] = 0
+            return false
+        }
+        return helper(0)
+    }
+}
+```

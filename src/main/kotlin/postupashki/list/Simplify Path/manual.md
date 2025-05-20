@@ -4,25 +4,21 @@
 ```
 class Solution {
     fun simplifyPath(path: String): String {
-        val path = path + "/"
         val stack = mutableListOf<String>()
 
-        var cur = ""
-        for (char in path){
-            if (char == '/'){
-                if (cur == ".."){
-                    if (stack.isNotEmpty()){
-                        stack.removeLast()
-                    }
-                } else if (cur != "" && cur != "."){
-                    stack.add(cur)
+        val parsed = path.split("/")
+
+        for (text in parsed){
+            if (text == ".."){
+                if (stack.isNotEmpty()){
+                    stack.removeLast()
                 }
-                cur = ""
-            } else {
-                cur += char
+            } else if (text != "." && text != ""){
+                stack.add(text)
             }
         }
-        return "/" + stack.joinToString("/")
+        val res = stack.joinToString("/")
+        return "/$res"
     }
 }
 
@@ -36,8 +32,6 @@ class Solution {
 
 **Описание решения**
 ```
-будь осторожен:
-сравнение char and "/" будет ошибка, правильнее будет char == '/'
-прежде чем вытаскивать со стека проверь наличие не пуст ли стек
+
 ```
 
