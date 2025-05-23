@@ -1,15 +1,26 @@
 ## 347. Top K Frequent Elements
 
 ```
-class Solution{ 
+class Solution {
     fun topKFrequent(nums: IntArray, k: Int): IntArray {
+
         val map = mutableMapOf<Int,Int>()
-        
+
         for (num in nums){
-            map[num] = map.getOrDefault(num,0) + 1
+            map[num] = map.getOrDefault(num, 0) + 1
         }
+
+
+        val sortedMap = map.entries.sortedByDescending{it.value}
         
-        return map.entries.sortedByDescending{it.value}.take(k).map{it.key}.toIntArray()
+        var counter = k
+        val ans = mutableListOf<Int>()
+        for ((key, _) in sortedMap){
+            ans.add(key)
+            counter--
+            if(counter == 0) break
+        }
+        return ans.toIntArray()
 
     }
 }
