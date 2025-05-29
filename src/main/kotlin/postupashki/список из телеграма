@@ -2,7 +2,7 @@
 x1) lru cache Хорошо пошло
 x2) number of islands Хорошо пошло
 x3) Longest Substring Without Repeating Characters Хорошо пошло
-x4) simplify path НОРМАС
+x4) simplify path надо повторить
 5) accounts merge Надо повторить
 6) минимальная панграмма https://t.me/algoses/305
 x7) jump game НОРМАС
@@ -10,12 +10,12 @@ x7) jump game НОРМАС
 x9) Symmetric Tree Хорошо пошло
 10) повторения символов https://t.me/algoses/288
 
-11) string compression НАДО ПОВТОРИТЬ
-12) find pivot index НАДО ПОВТОРИТЬ
-13) number of sub-arrays with odd sum (от 15 задачи) НАДО ПОВТОРИТЬ
-14) Subarray Sums Divisible by K (от 15 задачи) НАДО ПОВТОРИТЬ
+11) string compression НАДО ПОВТОРИТЬ (x2)
+12) find pivot index НАДО ПОВТОРИТЬ (x2)
+13) number of sub-arrays with odd sum (от 15 задачи) НАДО ПОВТОРИТЬ (x2)
+14) Subarray Sums Divisible by K (от 15 задачи) НАДО ПОВТОРИТЬ (x2)
 15) четный подотрезок https://t.me/algoses/275
-16) 3 sum closest НАДО ПОВТОРИТЬ
+16) 3 sum closest НАДО ПОВТОРИТЬ (x2)
 17) минимум abs https://t.me/algoses/269
 18) шахматная доска https://t.me/algoses/258
 19) Unique Paths (из 18 задачи)
@@ -57,3 +57,24 @@ x9) Symmetric Tree Хорошо пошло
 54) Subarray Sum Equals K
 55) Longest Palindromic Substring
 56) день рождения василия https://t.me/algoses/353
+
+мок собес:
+1) valid parentheses
+2) two sum
+
+3) Summary Ranges
+4) Longest Subarray of 1's After Deleting One Element
+
+
+25/05/2025
+1) Summary Ranges
+2) Longest Substring Without Repeating Characters (Яндекс)
+3) number of islands (Яндекс)
+4) keys and rooms (Тинькофф)
+
+27/05/2025
+1) number of islands
+2) Squares of a Sorted Array
+3) Symmetric Tree
+4) permutation in string
+

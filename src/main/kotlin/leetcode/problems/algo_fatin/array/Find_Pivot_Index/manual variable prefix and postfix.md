@@ -1,26 +1,26 @@
 ## 724. Find Pivot Index
 
-
+prefix
 ```
 
 class Solution {
-    fun pivotIndex (nums: IntArray): Int {
-        val n =  nums.size
+    fun pivotIndex(nums: IntArray): Int {
         
-        val prefix = IntArray(n + 1){0}
-        
+        var count = 0
+
+        val n = nums.size
+        val sum = nums.sum()
+
+        val arr = IntArray(n + 1)
+
         for (i in 0 until n){
-            prefix[i + 1] = prefix[i] + nums[i]
+            arr[i + 1] = arr[i] + nums[i]
         }
-        
-        val postfix = IntArray(n + 1){0}
-        
-        for (i in n - 1 downTo 0){
-            postfix[i] = postfix[i + 1] + nums[i]
-        
-        }
+
         for (i in 0 until n){
-            if (postfix[i + 1] == prefix[i]) return i
+            if (arr[i] == arr[n] - arr[i + 1]){
+                return i
+            }
         }
         return -1
     }
