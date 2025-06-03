@@ -7,22 +7,22 @@ class Solution {
         
         val ans = mutableListOf<String>()
 
-        fun backtrack(opening: Int, closing: Int, cur: String){
-            if (opening > n ) return
+        fun backtrack(opening: Int, closing: Int, cur: String, ans: MutableList<String>){
+            
+            if (opening > n || closing > opening){
+                return
+            }
+            
 
-            if (cur.length == n * 2){
+            if (opening + closing == n * 2){
                 ans.add(cur)
                 return
             }
 
-            if (opening < n){
-                backtrack(opening + 1, closing, cur + "(")
-            } 
-            if (closing < opening){
-                backtrack(opening, closing + 1, cur + ")")
-            }
+            backtrack(opening + 1, closing, cur + '(', ans)
+            backtrack(opening, closing + 1, cur + ')', ans)    
         }
-        backtrack(0,0,"")
+        backtrack(0,0, "", ans)
         return ans
     }
 }

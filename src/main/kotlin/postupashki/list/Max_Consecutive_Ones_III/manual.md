@@ -4,28 +4,25 @@
 ```
 class Solution {
     fun longestOnes(nums: IntArray, k: Int): Int {
-        val n = nums.size
-
-        var zeros = 0
+        var limit = 0
 
         var left = 0
 
-        var max = 0
+        var ans = 0
 
-        for (right in 0 until n){
+        for (right in 0 until nums.size){
             if (nums[right] == 0){
-                zeros++
-            }
-            while(zeros > k){
-                if (nums[left] == 0){
-                    zeros--
+                limit++
+                while(limit > k){
+                    if (nums[left] == 0){
+                        limit -= 1
+                    }
+                    left++
                 }
-                left++
             }
-
-            max = maxOf(max, right - left + 1)
+            ans = maxOf(ans, right - left + 1)
         }
-        return max
+        return ans
     }
 }
 

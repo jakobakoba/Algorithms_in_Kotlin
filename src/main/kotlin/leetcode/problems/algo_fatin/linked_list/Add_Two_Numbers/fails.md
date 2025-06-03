@@ -21,3 +21,6 @@ val newValue = (c1.`val` + c2.`val` + leftover) % 10
 
 MLE
 перепутал расчет newValue and carry. Должно быть newValue %10 и carry /10 
+
+### 31/05/2025
+- ошибка не поставил ? после variable когда использовал ?: элвис оператор
