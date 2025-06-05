@@ -10,17 +10,19 @@ class Solution {
 
         var i = 0
         var j = 0
+
         val ans = mutableListOf<IntArray>()
-
         while(i < n && j < m){
-            val first = firstList[i]
-            val second = secondList[j]
+            val a = firstList[i]
+            val b = secondList[j]
 
-            if (minOf(first[1], second[1]) >= maxOf(first[0], second[0])){
-                ans.add(intArrayOf(maxOf(first[0], second[0]), minOf(first[1], second[1])))
+            val left = maxOf(a[0], b[0])
+            val right = minOf(a[1], b[1])
+
+            if(left <= right){
+                ans.add(intArrayOf(left, right))
             }
-
-            if (first[1] < second[1]){
+            if (a[1] < b[1]){
                 i++
             } else {
                 j++
