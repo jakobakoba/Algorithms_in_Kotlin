@@ -78,3 +78,32 @@ x9) Symmetric Tree Хорошо пошло
 3) Symmetric Tree
 4) permutation in string
 
+08/06/2025
+1) Move Zeroes DONE
+2) Interval List Intersections DONE
+3) Generate parentheses DONE
+4) https://leetcode.com/problems/missing-number/
+5) rangeSumBST
+6) topKFrequent
+7)
+
+
+
+
+
+557 leetcode
+class Solution {
+    fun reverseWords(s: String): String {
+        val words = s.split(" ")
+        var result = StringBuilder()
+
+        for(word in words){
+            val value = word.reversed()
+            result.append(value)
+            result.append(' ')
+        }
+
+        return result.toString().trimEnd()
+
+    }
+}
