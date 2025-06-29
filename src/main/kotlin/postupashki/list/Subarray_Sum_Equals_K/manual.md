@@ -4,19 +4,21 @@
 class Solution {
     fun subarraySum(nums: IntArray, k: Int): Int {
         val n = nums.size
+        val map = mutableMapOf<Int,Int>()
+        map[0] = 1
 
-        var temp = 0
+        var count = 0
+        var prefix = 0
 
-        val map = mutableMapOf(0 to 1)
-        var ans = 0
-        for (i in 0 until n){
-            temp += nums[i]
-            if (temp - k in map){
-                ans += map[temp - k]!!
+        for (num in nums){
+            prefix += num
+            val needed = prefix - k
+            if (needed in map){
+                count += map[needed]!!
             }
-            map[temp] = map.getOrDefault(temp, 0) + 1
+            map[prefix] = map.getOrDefault(prefix, 0 ) + 1
         }
-        return ans
+        return count
     }
 }
 
