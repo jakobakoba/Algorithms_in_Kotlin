@@ -6,19 +6,20 @@ class Solution {
     fun simplifyPath(path: String): String {
         val stack = mutableListOf<String>()
 
-        val parsed = path.split("/")
+        val new = path.split("/")
 
-        for (text in parsed){
-            if (text == ".."){
+        for (s in new){
+            if (s == ".."){
                 if (stack.isNotEmpty()){
                     stack.removeLast()
                 }
-            } else if (text != "." && text != ""){
-                stack.add(text)
+            } else {
+                if (s != "." && s.isNotEmpty()){
+                    stack.add(s)
+                } 
             }
         }
-        val res = stack.joinToString("/")
-        return "/$res"
+        return "/${stack.joinToString("/")}"
     }
 }
 
