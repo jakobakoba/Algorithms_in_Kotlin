@@ -6,30 +6,26 @@ class Solution {
     fun evalRPN(tokens: Array<String>): Int {
         val stack = mutableListOf<Int>()
 
-        val operators = setOf("+", "-", "*", "/")
-
-        for (char in tokens){
-            if (char in operators){
-                val second = stack.removeLast()
+        for (element in tokens){
+            if (element in "+-*/"){
                 val first = stack.removeLast()
-
-                val result = when (char){
+                val second = stack.removeLast()
+                when(element){
                     "+" -> {
-                        first + second
+                        stack.add(second + first)
                     }
                     "-" -> {
-                        first - second
+                        stack.add(second - first)
                     }
                     "*" -> {
-                        first * second
+                        stack.add(second * first)
                     }
                     "/" -> {
-                        first / second
-                    } else -> throw IllegalStateException("")
+                        stack.add(second / first)
+                    }
                 }
-                stack.add(result)
             } else {
-                stack.add(char.toString().toInt())
+                stack.add(element.toInt())
             }
         }
         return stack.removeLast()

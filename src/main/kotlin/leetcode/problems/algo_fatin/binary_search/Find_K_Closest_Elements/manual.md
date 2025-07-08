@@ -23,7 +23,35 @@ class Solution {
     }
 }
 
+PriorityQueue
 
+class Solution {
+    fun findClosestElements(arr: IntArray, k: Int, x: Int): List<Int> {
+        val comparator = compareByDescending<Pair<Int,Int>>{it.second}
+
+        val pq = PriorityQueue(comparator)
+
+        for (num in arr){
+            val delta = abs(num - x)
+
+            val new = Pair(num, delta)
+
+            if (pq.size == k && pq.peek().second == delta){
+                continue
+            }
+
+            pq.add(new)
+            if (pq.size > k){
+                pq.poll()
+            }
+        }
+        val res = mutableListOf<Int>()
+        for (elem in pq){
+            res.add(elem.first)
+        }
+        return res.sorted()
+    }
+}
 ```
 
 **Оценка по времени**: О(log n + k)
