@@ -3,34 +3,33 @@
 
 ```
 class MyQueue() {
-    val input = mutableListOf<Int>()
-    val output = mutableListOf<Int>()
+    val stack1 = mutableListOf<Int>()
+    val stack2 = mutableListOf<Int>()
 
     fun push(x: Int) {
-        input.add(x)
+        stack1.add(x)
     }
 
     fun pop(): Int {
-        prepare()
-        return output.removeLast()
+        if (stack2.isEmpty()){
+            while(stack1.isNotEmpty()){
+                stack2.add(stack1.removeLast())
+            }
+        }
+        return stack2.removeLast()
     }
 
     fun peek(): Int {
-        prepare()
-        return output.last()
-
+        if (stack2.isEmpty()){
+            while(stack1.isNotEmpty()){
+                stack2.add(stack1.removeLast())
+            }
+        }
+        return stack2.last()
     }
 
     fun empty(): Boolean {
-        return input.isEmpty() && output.isEmpty()
-    }
-
-    fun prepare(){
-        if (output.isEmpty()){
-            while(input.isNotEmpty()){
-                output.add(input.removeLast())
-            }
-        }
+        return stack1.isEmpty() && stack2.isEmpty()
     }
 
 }
@@ -43,7 +42,6 @@ class MyQueue() {
  * var param_3 = obj.peek()
  * var param_4 = obj.empty()
  */
-
 ```
 
 **Оценка по времени**: О(n)
