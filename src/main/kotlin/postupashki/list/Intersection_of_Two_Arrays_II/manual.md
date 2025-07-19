@@ -23,6 +23,31 @@ class Solution {
     }
 }
 
+class Solution {
+    fun intersect(nums1: IntArray, nums2: IntArray): IntArray {
+        val map1 = mutableMapOf<Int,Int>()
+        for (num in nums1){
+            map1[num] = map1.getOrDefault(num, 0) + 1
+        }
+
+        val map2 = mutableMapOf<Int,Int>()
+        for (num in nums2){
+            map2[num] = map2.getOrDefault(num, 0) + 1
+        }
+        val ans = mutableListOf<Int>()
+        for ((key, value) in map1){
+            if (key in map2){
+                val first = map1[key]!!
+                val second = map2[key]!!
+                repeat(minOf(first, second)){
+                    ans.add(key)
+                }
+            }
+        }
+        return ans.toIntArray()
+    }
+}
+
 ```
 
 **Оценка по времени**: О(n)

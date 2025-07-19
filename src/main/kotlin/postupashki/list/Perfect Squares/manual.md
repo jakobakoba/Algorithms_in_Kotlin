@@ -4,15 +4,21 @@
 ```
 class Solution {
     fun numSquares(n: Int): Int {
-        val dp = IntArray(n + 1){n}
 
+        val squares = mutableListOf<Int>()
+        var i = 1
+        while(i * i <= n){
+            squares.add(i * i)
+            i++
+        }
+        
+        val dp = IntArray(n + 1){Int.MAX_VALUE}
         dp[0] = 0
 
-        for (target in 1 .. n){
-            for (s in 1 .. target){
-                val square = s * s
-                if (target - square < 0) break
-                dp[target] = minOf(dp[target], 1 + dp[target- square])
+        for (i in 1 .. n){
+            for (square in squares){
+                if (square > i) break
+                dp[i] = minOf(dp[i], dp[i - square] + 1)
             }
         }
         return dp[n]
